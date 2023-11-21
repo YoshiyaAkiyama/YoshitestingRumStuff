@@ -1,0 +1,39 @@
+.Feedback {
+  z-index: 999;
+  position: fixed;
+  bottom: 30px;
+  left: 30px;
+  color: #fff;
+  display: flex;
+  padding: 5px 15px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  border-radius: 3px;
+  background-color: rgb(50, 50, 50);
+  transform: translateY(0);
+  transition: all 0.4s cubic-bezier(0.72, 1.06, 0.18, 0.95);
+}
+.Feedback-Visible {
+  transform: translateY(0) !important;
+}
+.Feedback-hidden {
+  transform: translateY(100px) !important;
+}
+
+.Feedback p {
+  font-weight: 400;
+  line-height: 1.43;
+  border-radius: 4px;
+  letter-spacing: 0.01071em;
+  font-size: 0.875rem;
+  align-items: center;
+}
+.Feedback button {
+  font-size: 20px;
+  color: rgb(220, 0, 78);
+  background: inherit;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
